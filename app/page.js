@@ -78,7 +78,8 @@ export default function Home() {
       <section className="bg-gradient-to-r from-purple-900 to-purple-400 py-15">
         <div className="container text-center mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br /><span className="text-purple-300 font-bold bg-pink-100 text-2xl py-2 px-2 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
+            <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br />
+            <span className="text-purple-600 font-bold bg-orange-200 text-xl py-2 px-2 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4 mb-4">
                 <div className="bg-white text-purple-600 text-2xl">❄</div>
@@ -132,15 +133,63 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto mt-10">
+          <div className="max-w-4xl mx-auto mt-15">
             {/* <Link href="#order" class="text-white text-xl bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">এখনই অর্ডার করুন →</Link> */}
-            <Link href="#order" className="text-white text-xl bg-purple-700 py-4 px-80 rounded-lg hover:bg-purple-800 shadow-lg">এখনই অর্ডার করুন →</Link>
+            <Link href="#order" className="text-white text-xl bg-purple-700 py-6 px-80 rounded-lg hover:bg-purple-800 shadow-lg">এখনই অর্ডার করুন →</Link>
           </div>
 
         </div>
       </section>
 
       {/* Special Features */}
+
+      {/* Product Description / Specs  */}
+
+      <section className="bg-white py-10">
+        <div className="container text-center mx-auto">
+          <div className="text-purple-600"><span className="text-purple-600">◆</span></div>
+          <h2 className="text-black font-bold text-2xl">প্রোডাক্ট <span className="text-purple-600 font-bold text-2xl">ডেসক্রিপশন</span></h2>
+          <p className="text-gray-600 mt-6">সম্পূর্ণ স্পেসিফিকেশন এক নজরে</p>
+
+          <div className="max-w-4xl mx-auto border border-gray-300 rounded-md shadow-lg p-6 mt-6">
+            <div className="flex justify-between border-b border-gray-400 py-4 px-4">
+              <span className="text-black font-medium">জামা</span>
+              <span className="text-black font-semibold">বেক্সি (কটন ড্রেস)</span>
+            </div>
+            <div className="flex justify-between border-b border-gray-400 py-4 px-4">
+              <span className="text-black font-medium">বডি</span>
+              <span className="text-black font-semibold">৫০"+</span>
+            </div>
+            <div className="flex justify-between border-b border-gray-400 py-4 px-4">
+              <span className="text-black font-medium">লম্বা</span>
+              <span className="text-black font-semibold">৪৭"+</span>
+            </div>
+            <div className="flex justify-between border-b border-gray-400 py-4 px-4">
+              <span className="text-black font-medium">ওড়না</span>
+              <div className="flex flex-col items-end">
+                <span className="text-black font-semibold">৫.৫ হাত</span>
+                <span className="text-yellow-800 text-sm text-bold">অলওভার ওড়না সুতার কাজ</span>
+              </div>
+
+            </div>
+            <div className="flex justify-between border-b border-gray-400 py-4 px-4">
+              <span className="text-gray-600 font-medium">পায়জামা</span>
+              <span className="text-black font-semibold">প্রিমিয়াম কটন</span>
+            </div>
+          </div>
+
+          <div className="max-w-4xl mx-auto mt-15">
+            <Link href="#order"
+              className="text-white text-xl bg-purple-700 py-6 px-80 rounded-lg hover:bg-purple-800 shadow-lg"
+            >
+              এখনই অর্ডার করুন →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Description / Specs  */}
+
 
 
 
