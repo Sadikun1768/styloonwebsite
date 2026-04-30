@@ -220,12 +220,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section className="bg-gradient-to-r from-pink-200 to-purple-400 py-10 text-center">
+        <h3 className="text-black text-xl font-bold">যেকোন প্রয়োজনে কল করতে পারেন</h3>
+        <Link href="tel:01741476000" className="text-purple-600 text-xl bg-white py-3 px-6 border-2 rounded-full border-purple-600 font-bold mt-4 inline-block">
+          📞 01741-476000
+        </Link>
+      </section>
+
+      {/* Contact Section */}
 
 
+      {/* Footer Info  */}
+      <footer>
+        <div className="text-center mx-auto py-10">
+        <div className="text-white text-4xl font-extralight">STYLON</div>
+        <div className="text-orange-100 text-sm font-extralight py-6">Crafted with care, delivered with trust</div>
 
+        <div className="footer-info">
+          <div className="text-white mb-4">
+            📍 ১২/সি, রোড - ২১, প্লট - ১/১, পল্লবী, মিরপুর, ঢাকা - ১২১৬
+          </div>
+          <div className="mb-4">
+            📞 <Link href="tel:01741476000">01741-476000</Link>
+          </div>
+          <div className="footer-info-item mb-6">
+            ✉ <Link className="text-orange-200 hover:text-orange-300 font-bold" href="mailto:stylonbd@gmail.com">stylonbd@gmail.com</Link>
+          </div>
+        </div>
 
+        <div className="text-white text-lg font-bold mb-4">Important Links</div>
+        <div className="flex justify-center gap-6 mb-4">
+          <Link className="text-white hover:bg-purple-600 font-bold py-2 px-6 rounded-full" href="https://shop.stylonbd.com/privacy-policy">Privacy Policy</Link>
+          <Link className="text-white hover:bg-purple-600 font-bold py-2 px-6 rounded-full" href="https://shop.stylonbd.com/terms-conditions">Terms & Conditions</Link>
+        </div>
 
-
+        <div className="text-white text-sm mt-8">
+          © 2026 shop.stylonbd.com | Developed By <Link className="text-orange-200 font-bold" href="https://servicekey.com.bd">Service Key</Link>
+        </div>
+         </div>
+      </footer>
 
 
 
