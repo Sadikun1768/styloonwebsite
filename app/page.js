@@ -79,18 +79,18 @@ export default function Home() {
         <div className="container text-center mx-auto">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-white font-bold text-2xl mb-4 leading-relaxed">বেস্ট সেলিং কটন থ্রি পিস<br />
-            <span className="text-purple-600 font-bold bg-orange-200 text-xl py-2 px-2 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
+              <span className="text-purple-600 font-bold bg-orange-200 text-xl py-2 px-2 rounded-md">পাচ্ছেন বিশাল ডিস্কাউন্টে</span></h3>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4 mb-4">
-                <div className="bg-white text-purple-600 text-2xl">❄</div>
+                <div className="bg-orange-200 text-purple-600 text-2xl">❄</div>
                 <span className="text-white text-xl">গরমের শান্তি</span>
               </div>
               <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 mb-4 gap-4">
-                <div className="bg-white text-purple-600 text-2xl">✓</div>
+                <div className="bg-orange-200 text-purple-600 text-2xl">✓</div>
                 <span className="text-white text-xl">শরীরে র‍্যাশ হবে না, চুলকাবে না</span>
               </div>
               <div className="flex items-start border border-white bg-purple-700/90 rounded-md shadow-lg py-4 px-8 gap-4">
-                <div className="bg-white text-purple-600 text-2xl">✦</div>
+                <div className="bg-orange-200 text-purple-600 text-2xl">✦</div>
                 <span className="text-white text-xl">সারাদিন শরীরে দিবে ঠাণ্ডা অনুভূতি</span>
               </div>
             </div>
@@ -106,28 +106,28 @@ export default function Home() {
           <h2 className="text-black text-4xl font-bold mb-6">এই ড্রেসটির <span className="text-purple-600">বিশেষত্ব</span> কি কি?</h2>
           <p className="text-gray-600 mb-6">৬টি কারণে এই ড্রেস আপনার প্রিয় হবে</p>
 
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
-            <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg">
+            <div className="flex border border-gray-300 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">ঠাণ্ডা কিংবা গরম যেকোন সিজনে সারাদিন পড়ে থাকা যায়</span>
             </div>
-            <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+            <div className="flex border border-gray-300 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">শরীরে কোন প্রকার র‍্যাশ হবে না অথবা শরীর চুলকাবে না</span>
             </div>
-            <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+            <div className="flex border border-gray-300 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">ড্রেসটি পড়ার পর গরম লাগবে না, স্বাভাবিক ঠান্ডা অনুভূতি ফীল হবে</span>
             </div>
-            <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+            <div className="flex border border-gray-300 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">যেকোন ধরণের অনুষ্ঠান বা প্রোগ্রামে পড়ে যেতে পারবেন</span>
             </div>
-            <div className="flex border border-gray-300 mb-4 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
+            <div className="flex border border-gray-300 rounded-md py-4 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">আলাদা করে ইনার পড়তে হবে না</span>
             </div>
-            <div className="flex border border-gray-300 mb-4 rounded-md py-6 px-6 items-center hover:bg-green-100 gap-4">
+            <div className="flex border border-gray-300 rounded-md py-6 px-6 items-center hover:bg-green-100 gap-4">
               <span className="text-white bg-green-600 rounded-full py-2 px-4">✓</span>
               <span className="text-black">কাপড়ের পরিমাণ বেশি থাকায় যেকোন স্বাস্থ্যবান আপুরাও ড্রেস বানাতে পারবে</span>
             </div>
@@ -190,6 +190,35 @@ export default function Home() {
 
       {/* Product Description / Specs  */}
 
+      {/* Price Block */}
+      <section className="bg-gradient-to-r from-purple-100 to-white py-10">
+        <div className="max-w-4xl bg-white text-center mx-auto border-2 border-purple-900 rounded-lg shadow-lg py-6 px-8">
+          <div className="">
+            <div className="flex justify-center items-center gap-2">
+              <span className="text-black py-4">প্রোডাক্টের রেগুলার বাজার মূল্য</span>
+              <span className="text-gray-500 line-through">৳ ২,৮৫০</span>
+            </div>
+            <div className="text-purple-700 text-xl py-4">স্টক ক্লিয়ারেন্স অফার মূল্য</div>
+            <div className="text-purple-600 text-bold text-6xl"><span className="text-black font-bold text-xl">৳</span>২,২৫০</div>
+            <div className="text-gray-500 text-sm py-4">(ডেলিভারি চার্জ প্রযোজ্য)</div>
+            <div className="text-purple-900 font-bold py-2 px-4 rounded-full bg-orange-200 w-fit mx-auto">🎉 সাশ্রয় হবে ৳ ৬০০</div>
+          </div>
+        </div>
+      </section>
+      {/* Price Block */}
+
+      {/* Warning */}
+      <section className="bg-gradient-to-r from-purple-100 to-white py-10">
+        <div className="max-w-4xl mx-auto bg-orange-100 rounded-lg shadow-lg border-2 border-orange-400 py-6 px-8 mt-10">
+          <div className="">
+            <div className="flex items-center gap-2 mb-4 border-b border-dashed border-orange-400">
+              <span className="text-orange-500 font-bold text-2xl py-2">⚠</span>
+              <span className="text-orange-500 font-bold py-2">একটি সতর্ক বার্তা!!</span>
+            </div>
+            <p className="text-gray-500">সম্মানিত গ্রাহক, অর্ডার কনফার্ম করার পর যথাযথ কারণ ছাড়া পণ্য না উঠালে আমরা আইনগতভাবে ব্যবস্থা নিতে বাধ্য থাকিব। কেননা, একটি পার্সেল বুকিং করার পর তা রিটার্ন আসলে কুরিয়ার কোম্পানি আমাদের নিকট প্রায় ২০০ টাকা চার্জ করে। তাই অনুগ্রহ করে অযথা অর্ডার কনফার্ম করবেন না। বিস্তারিত তথ্য জানার পর পণ্যটি কেবল আপনার পছন্দ হলেই অর্ডারটি কনফার্ম করার অনুরোধ রইল। ধন্যবাদ।</p>
+          </div>
+        </div>
+      </section>
 
 
 
