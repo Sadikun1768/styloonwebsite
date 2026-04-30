@@ -12,14 +12,24 @@ export default function Home() {
       {/* Top promo bar */}
 
       {/* Header */}
-      <header className="w-full bg-white shadow-sm">
-        <div className="container py-6 px-30 flex items-center justify-between mx-auto">
-          <h1 className=" text-purple-600 text-2xl font-bold">STYLON</h1>
-          <button className="bg-purple-600 bg-gradient-to-r from-purple-500 to-pink-500 font-bold py-2 px-5 rounded-full flex items-center gap-4">
+      {/* <header className="bg-white py-6">
+        <div className="flex justify-between mx-auto">
+          <h1 className="text-2xl font-bold text-purple-600">STYLON</h1>
+          <button 
+           className="text-xl font-bold text-white bg-purple-600 py-2 px-6 rounded-full hover:bg-purple-700">
             📞Call
           </button>
         </div>
+      </header> */}
+      <header className="w-full bg-white shadow-sm">
+        <div className="max-w-4xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-purple-600 text-2xl font-bold">STYLON</h1>
+          <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-5 rounded-full flex items-center gap-2 hover:from-purple-600 hover:to-pink-600">
+            📞 Call
+          </button>
+        </div>
       </header>
+
 
       {/* End Header */}
 
@@ -62,14 +72,17 @@ export default function Home() {
           <div className="max-w-4xl text-black text-xl leading-relaxed">আমরা শুধু আপনার সৌন্দর্যের কথাই চিন্তা করছি না, সাথে আপনার<span className="text-purple-600 font-bold text-xl"> আরামদায়ক বিষয়টাও</span> খেয়াল রাখছি। আপনার সেই আরাম<br /> আর সৌন্দর্যের কথা চিন্তা করেই হাজির হয়েছি <span className="text-purple-600 font-bold text-xl">100% সুতি কটন ড্রেস</span> নিয়ে।</div>
 
         </div>
-        <div className="max-w-4xl mx-auto bg-white/90 text-center shadow-lg py-6 px-8 mt-4">
-          <button
-            type="button"
-            className="text-white text-xl bg-purple-700 py-4 px-70 rounded-lg hover:bg-purple-800 shadow-lg"
-          >
-            এখনই অর্ডার করুন →
-          </button>
+        <div className="bg-white/90 w-full text-center shadow-lg py-6 px-8 mt-4">
+          <div className="mx-auto w-full max-w-4xl">
+            <button
+              type="button"
+              className="w-full text-white text-xl bg-purple-700 py-4 rounded-lg hover:bg-purple-800 shadow-lg"
+            >
+              এখনই অর্ডার করুন →
+            </button>
+          </div>
         </div>
+
 
       </section>
       {/* Product Image  */}
@@ -133,10 +146,18 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto mt-15">
-            {/* <Link href="#order" class="text-white text-xl bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">এখনই অর্ডার করুন →</Link> */}
-            <Link href="#order" className="text-white text-xl bg-purple-700 py-6 px-80 rounded-lg hover:bg-purple-800 shadow-lg">এখনই অর্ডার করুন →</Link>
+          <div className="w-full text-center py-4 mt-4">
+            <div className="mx-auto w-full max-w-4xl">
+              <button
+                type="button"
+                className="w-full text-white text-xl bg-purple-700 py-4 rounded-lg hover:bg-purple-800 shadow-lg"
+              >
+                এখনই অর্ডার করুন →
+              </button>
+            </div>
           </div>
+
+
 
         </div>
       </section>
@@ -177,13 +198,15 @@ export default function Home() {
               <span className="text-black font-semibold">প্রিমিয়াম কটন</span>
             </div>
           </div>
-
-          <div className="mt-15">
-            <Link href="#order"
-              className="text-white text-xl bg-purple-700 py-6 px-80 rounded-lg hover:bg-purple-800 shadow-lg"
-            >
-              এখনই অর্ডার করুন →
-            </Link>
+          <div className="w-full text-center py-4 mt-4">
+            <div className="mx-auto w-full max-w-4xl">
+              <button
+                type="button"
+                className="w-full text-white text-xl bg-purple-700 py-4 rounded-lg hover:bg-purple-800 shadow-lg"
+              >
+                এখনই অর্ডার করুন →
+              </button>
+            </div>
           </div>
 
         </div>
