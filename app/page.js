@@ -37,8 +37,8 @@ export default function Home() {
       {/* Hero / Headline */}
       <section className="w-full relative">
         <span className="absolute top-0 left-0 text-4xl text-purple-600 py-10 px-10">✦</span>
-        <span className="absolute bottom-0 right-0 text-4xl text-purple-600 py-10 px-10">✦</span>
-        <div className="bg-gradient-to-r from-pink-100 to-purple-200 py-10 md:py-20">
+        <span className="absolute bottom-0 right-0 text-2xl sm:text-2xl md:text-3xl text-purple-600 py-10 px-10">✦</span>
+        <div className="bg-gradient-to-r from-pink-100 to-purple-200 text-2xl sm:text-2xl md:text-3xl py-10 md:py-20">
           <h1 className="text-4xl md:text-4xl font-bold text-center text-black pb-4 leading-normal">
             গিফট এর জন্য মনকাড়া ড্রেস<br /><span className="text-purple-600">১০০% কালার গ্যারান্টি</span>ও যেকোন সিজনে সারাদিন<br /> ব্যবহারযোগ্য
           </h1>
