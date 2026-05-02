@@ -28,7 +28,15 @@ export default function Home() {
       </header> */}
       <header className="w-full bg-white shadow-sm">
         <div className="max-w-4xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-purple-600 text-2xl font-bold">STYLON</h1>
+          {/* <h1 className="text-purple-600 text-2xl font-bold">STYLON</h1> */}
+          <div className="">
+            <Image 
+              src="/images/Stylon.webp"
+              alt="STYLON Logo"
+              width={100}
+              height={50}
+            />
+          </div>
           <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-5 rounded-full flex items-center gap-2 hover:from-purple-600 hover:to-pink-600">
             📞 Call
           </button>
