@@ -1,119 +1,255 @@
-"use client"
+"use client";
 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
+// Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css/thumbs';
+
 import Image from 'next/image';
-export default function ProductImg() {
-    return (
-        <div className='bg-white height-full px-2'>
+
+// import required modules
+import { FreeMode, Navigation, Thumbs, Autoplay } from 'swiper/modules';
+
+export default function App() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  return (
+    <>
       <Swiper
-        spaceBetween={20}
-        slidesPerView={3}
-        navigation={true}
-        pagination={{ clickable: true }}
-        className='w-[100%]'
         loop={true}
-        modules={[Pagination, Navigation, Autoplay]}
+        spaceBetween={10}
+        navigation={true}
+        className='max-w-4xl mx-auto py-8'
+        thumbs={{ swiper: thumbsSwiper }}
+        pagination={{ clickable: true }}
+        modules={[FreeMode, Navigation, Thumbs, Autoplay]}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false
         }}
-          breakpoints={{
-          
-          0: {
-            slidesPerView: 1,
-          },
-          
-          768: {
-            slidesPerView: 2,
-          },
-        
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-
+      // className="mySwiper2"
       >
         <SwiperSlide>
           <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
             src="/images/one.webp"
             alt="Picture of the author"
             width={300}
             height={300}
-            layout='responsive'
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
             src="/images/one.webp"
             alt="Picture of the author"
             width={300}
             height={300}
-            layout='responsive'
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
             src="/images/one.webp"
             alt="Picture of the author"
             width={300}
             height={300}
-            layout='responsive'
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/two.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/three.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/four.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/five.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/five.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/five.webp"
+            alt="Picture of the dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className='cursor-pointer transition-transform duration-300 hover:scale-150'
+            src="/images/five.webp"
+            alt="Picture of dress"
+            width={300}
+            height={300}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className='max-w-4xl mx-auto py-8'
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false
+        }}
+      >
+        <SwiperSlide>
+          <Image
+            className="py-2"
+            src="/images/one.webp"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="py-2"
+            src="/images/one.webp"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="py-2"
+            src="/images/one.webp"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="py-2"
             src="/images/two.webp"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            layout='responsive'
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="py-2"
             src="/images/three.webp"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            layout='responsive'
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="py-2"
             src="/images/four.webp"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            layout='responsive'
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            className="py-2"
             src="/images/five.webp"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            layout='responsive'
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/images/six.webp"
+            className="py-2"
+            src="/images/five.webp"
             alt="Picture of the author"
-            width={300}
-            height={300}
-            layout='responsive'
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
           />
         </SwiperSlide>
-     
-       
+        <SwiperSlide>
+          <Image
+            className="py-2"
+            src="/images/five.webp"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="py-2"
+            src="/images/five.webp"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </SwiperSlide>
       </Swiper>
-    </div>
-    )
+    </>
+  );
 }

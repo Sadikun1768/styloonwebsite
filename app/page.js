@@ -28,18 +28,19 @@ export default function Home() {
       </header> */}
       <header className="w-full bg-white shadow-sm">
         <div className="max-w-4xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
-          {/* <h1 className="text-purple-600 text-2xl font-bold">STYLON</h1> */}
           <div className="">
-            <Image 
+            <Image
               src="/images/Stylon.webp"
               alt="STYLON Logo"
               width={100}
               height={50}
             />
           </div>
-          <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-5 rounded-full flex items-center gap-2 hover:from-purple-600 hover:to-pink-600">
+
+          <Link href="tel:01741476000" className="text-xl font-bold text-white bg-purple-600 py-2 px-6 rounded-full
+           hover:bg-purple-700">
             📞 Call
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -487,33 +488,32 @@ export default function Home() {
                 required
               />
             </div>
-
-            <div className="flex justify-between gap-4 mt-4">
-              <div className="flex flex-col items-start gap-2">
-                <label className="text-black">
-                  মোবাইল নম্বর<span className="text-purple-600 text-xl">*</span>
-                </label>
-                <input
-                  type="tel"
-                  className="text-gray-400 border border-gray-400 rounded-md py-2 px-2"
-                  placeholder="01XXXXXXXXX"
-                  required
-                />
-              </div>
-              <div className="flex flex-col items-start gap-2">
-                <label className="text-black">
-                  থানার নাম <span className="text-purple-600 text-xl">*</span>
-                </label>
-                <input
-                  type="text"
-                  className="text-gray-400 border border-gray-400 rounded-md w-full  py-2 px-2"
-                  placeholder="যেমন: মিরপুর"
-                  required
-                />
-              </div>
+            <div className="flex flex-col items-start gap-2">
+              <label className="text-black">
+                থানার নাম <span className="text-purple-600 text-xl w-full">*</span>
+              </label>
+              <input
+                type="text"
+                className="text-gray-400 border border-gray-400 rounded-md w-full py-2 px-2"
+                placeholder="যেমন: মিরপুর"
+                required
+              />
             </div>
 
-            <div className="flex flex-col items-start gap-2 mt-4">
+            <div className="flex flex-col items-start gap-2">
+              <label className="text-black">
+                মোবাইল নম্বর<span className="text-purple-600 text-xl">*</span>
+              </label>
+              <input
+                type="tel"
+                className="text-gray-400 border w-full border-gray-400 rounded-md py-2 px-2"
+                placeholder="01XXXXXXXXX"
+                required
+              />
+            </div>
+
+
+            {/* <div className="flex flex-col items-start gap-2 mt-4">
               <label className="text-black">
                 Country / Region{" "}
                 <span className="text-purple-600 text-xl">*</span>
@@ -524,7 +524,7 @@ export default function Home() {
               >
                 <option value="Bangladesh">Bangladesh</option>
               </select>
-            </div>
+            </div> */}
           </div>
 
           {/* Shipping  */}
