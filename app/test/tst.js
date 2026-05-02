@@ -1,4 +1,4 @@
-<!-- ─── ORDER SECTION ─── -->
+
 <section class="order-section" id="order">
   <div class="container" style="padding:0">
 
