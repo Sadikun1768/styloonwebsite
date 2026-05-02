@@ -103,12 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-
-
-
       {/* <section className="bg-white">
         <div className="bg-gradient-to-r from-white-100 to-pink-100 text-center rounded-md py-10 px-20">
           <div className="relative inline-block">
@@ -371,7 +365,7 @@ export default function Home() {
                 একটি সতর্ক বার্তা!!
               </span>
             </div>
-            <p className="text-gray-500">
+            <p className="text-gray-500 sm:text-sm md:text-md">
               সম্মানিত গ্রাহক, অর্ডার কনফার্ম করার পর যথাযথ কারণ ছাড়া পণ্য না
               উঠালে আমরা আইনগতভাবে ব্যবস্থা নিতে বাধ্য থাকিব। কেননা, একটি
               পার্সেল বুকিং করার পর তা রিটার্ন আসলে কুরিয়ার কোম্পানি আমাদের
