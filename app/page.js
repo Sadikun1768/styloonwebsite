@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import ProductImg from "./component/ProductImg";
+
+
 
 export default function Home() {
   return (
@@ -42,7 +45,7 @@ export default function Home() {
         <span className="absolute bottom-0 right-0 text-2xl sm:text-2xl md:text-3xl text-purple-600 py-10 px-10">
           ✦
         </span>
-        <div className="bg-gradient-to-r from-pink-100 to-purple-200 text-2xl sm:text-2xl md:text-3xl py-10 md:py-20">
+        <div className="bg-gradient-to-r from-pink-200 to-purple-200 text-2xl sm:text-2xl md:text-3xl py-10 md:py-20">
           <h1 className="text-4xl md:text-4xl font-bold text-center text-black pb-4 leading-normal">
             গিফট এর জন্য মনকাড়া ড্রেস
             <br />
@@ -68,7 +71,45 @@ export default function Home() {
       {/* Hero / Headline */}
 
       {/* Product Image  */}
+
       <section className="bg-white">
+        <ProductImg />
+        <div className="container relative mx-auto w-fit bg-white text-center border-2 border-dashed border-purple-300 py-6 px-4 mt-6 rounded-lg shadow-lg">
+          <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white px-3">
+            <span className="text-purple-600 bg-white py-2 px-2 rounded-sm text-xl">💜</span>
+          </div>
+          <div className="max-w-4xl bg-white text-black text-xl leading-relaxed">
+            আমরা শুধু আপনার সৌন্দর্যের কথাই চিন্তা করছি না, সাথে আপনার
+            <span className="text-purple-600 font-bold text-xl">
+              আরামদায়ক বিষয়টাও
+            </span>
+            খেয়াল রাখছি। আপনার সেই আরাম
+            <br /> আর সৌন্দর্যের কথা চিন্তা করেই হাজির হয়েছি
+            <span className="text-purple-600 font-bold text-xl">
+              100% সুতি কটন ড্রেস
+            </span>
+            নিয়ে।
+          </div>
+        </div>
+        <div className="bg-white/90 w-full text-center shadow-lg py-6 px-8 mt-4">
+          <div className="mx-auto w-full max-w-4xl">
+            <button
+              type="button"
+              className="w-full text-white text-xl bg-purple-700 py-4 rounded-lg hover:bg-purple-800 shadow-lg"
+            >
+              এখনই অর্ডার করুন →
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      {/* <section className="bg-white">
         <div className="bg-gradient-to-r from-white-100 to-pink-100 text-center rounded-md py-10 px-20">
           <div className="relative inline-block">
             <span className="absolute top-2 left-1 bg-purple-600 text-white font-bold py-1 px-3 rounded-full text-sm">
@@ -115,7 +156,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Product Image  */}
 
       {/* Best Selling Block  */}
@@ -296,7 +337,7 @@ export default function Home() {
 
           <span className="absolute -top-5 left-1/2 -translate-x-1/2 bg-purple-700 font-bold py-2 px-4 rounded-full text-sm text-white">স্টক ক্লিয়ারেন্স অফার</span>
 
-        <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
             <span className="text-black py-4">
               প্রোডাক্টের রেগুলার বাজার মূল্য
             </span>
