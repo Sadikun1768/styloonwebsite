@@ -470,7 +470,7 @@ export default function Home() {
               </label>
               <input
                 type="text"
-                className="text-gray-400 border border-gray-400 rounded-md w-full py-2 px-2"
+                className="text-black border border-gray-400 rounded-md w-full py-2 px-2"
                 placeholder="আপনার সম্পূর্ণ নাম লিখুন"
                 required
               />
@@ -478,12 +478,12 @@ export default function Home() {
 
             <div className="flex flex-col items-start gap-2 mt-4">
               <label className="text-black">
-                সম্পূর্ণ ঠিকানা{" "}
+                "সম্পূর্ণ ঠিকানা"
                 <span className="text-purple-600 text-xl">*</span>
               </label>
               <input
                 type="text"
-                className="text-gray-400 border border-gray-400 rounded-md w-full py-2 px-2"
+                className="text-black border border-gray-400 rounded-md w-full py-2 px-2"
                 placeholder="বাসা/হোল্ডিং, রোড, এলাকা"
                 required
               />
@@ -494,7 +494,7 @@ export default function Home() {
               </label>
               <input
                 type="text"
-                className="text-gray-400 border border-gray-400 rounded-md w-full py-2 px-2"
+                className="text-black border border-gray-400 rounded-md w-full py-2 px-2"
                 placeholder="যেমন: মিরপুর"
                 required
               />
@@ -506,7 +506,7 @@ export default function Home() {
               </label>
               <input
                 type="tel"
-                className="text-gray-400 border w-full border-gray-400 rounded-md py-2 px-2"
+                className="text-black border w-full border-gray-400 rounded-md py-2 px-2"
                 placeholder="01XXXXXXXXX"
                 required
               />
@@ -519,7 +519,7 @@ export default function Home() {
                 <span className="text-purple-600 text-xl">*</span>
               </label>
               <select
-                className="text-gray-400 border border-gray-400 rounded-md w-full py-2 px-2"
+                className="text-black border border-gray-400 rounded-md w-full py-2 px-2"
                 required
               >
                 <option value="Bangladesh">Bangladesh</option>
